@@ -1,0 +1,48 @@
+.subscribe{
+    padding: 90px 0;
+    background-color: #2a2d3c;
+    .container{
+      @include mobile_tablet{
+          width: 96%;
+      }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .content{
+            text-align: center;
+            h1{
+                color: $white;
+                word-spacing: 4px;
+                @include mobile_tablet{
+                    font-size: 17px;
+                    word-spacing: 1px;
+                }
+              
+            }
+            p{
+                color: $white;
+                padding: 20px 0 35px;
+                @include mobile_tablet{
+                    font-size: 13px;
+                }
+               
+            }
+            .btn{
+                margin: 0 12px;
+                font-size: 16px;
+                padding: 12px 19px;
+                @include mobile_tablet{
+                    margin: 0 8px;
+                    font-size: 14px;
+                    padding: 11px 12px;
+                }
+             
+                &:last-child{
+                    background-color: $white;
+                    color: $main_color;
+                }
+
+            }
+        }
+    }
+}

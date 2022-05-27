@@ -1,0 +1,120 @@
+.header{
+    min-height: 100vh;
+    padding-top: 5px;
+    width: 100%;
+    background: url("../images/header-bg.jpg");
+    position: relative;
+    background-size: cover;
+    z-index: 5888;
+    @include mobile_tablet{
+    }
+
+   
+    &::after{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: $over_flow;
+        z-index: -1;
+    }
+
+   .container{
+       @include mobile_tablet{
+           width: 95%;
+       }
+
+    .menu{
+        position: absolute;
+        top: 7%;
+        right: 10%;
+        display: none;
+
+      
+    }
+
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+
+        .links{
+            display: flex;
+           
+            li{
+                margin: 0 10px;
+
+               
+
+                a{
+                    color:$white;
+                    font-weight: 300;
+                    font-size: 14px;
+                    transition: $transition;
+                    &:hover{
+                        color: $main_color;
+                    }
+                }
+            }
+        }
+        .logo img{
+            max-width: 100%;
+            width: 150px;
+            @include mobile_tablet{
+                width: 120px;
+            }
+          
+        }
+    }
+}
+.hero-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $white;
+    text-align: center;
+    width: 550px;
+    z-index: 85;
+    @include mobile_tablet{
+        width: 400px;
+    }
+    
+    
+    h1{
+        font-size: 33px;
+        line-height: 1.5;
+        font-weight: 300;
+        letter-spacing: 0;
+        @include mobile_tablet{
+            font-size: 20px;
+        }
+
+      
+    }   
+    }  
+    .icon{
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        i{
+            background-color: $main_color;
+            padding: 10px; 
+            color: #292c34;
+            border-radius: 50%; 
+            font-size: 18px;  
+            transition: $transition;
+            cursor: pointer;
+            &:hover{
+                color: $white;
+                background-color: $black;
+            } 
+          }
+    } 
+}

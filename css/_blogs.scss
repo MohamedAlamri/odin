@@ -1,0 +1,105 @@
+.blogs{
+    background-color: $main-color;
+    position: relative;
+    padding: 30px 0 120px;
+    .container{
+       @include mobile_tablet{
+           width: 90%;
+       }
+       @include large{
+           width: 75%;
+       }
+    
+        h2{
+
+            text-align: center;
+            padding-bottom: 15px;
+            font-size: 30px;
+            @include mobile_tablet{
+                font-size: 22px;
+            }
+        }
+        h4{
+            text-align: center;  
+            color: $white;
+            padding-bottom: 60px;
+
+        }
+        .boxs{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+           justify-content: center;
+           align-items: center;
+           
+           .content{
+               padding: 13px;
+           }
+
+            }
+            
+            .box{
+                flex-basis: 28%;
+                background-color: $white;
+                border-radius: 4px;
+                @include mobile_tablet{
+                    flex-basis: 95%;
+                }
+                @include small{
+                    flex-basis: 38%;
+                }
+                @include custome{
+                    flex-basis: 70%;
+                }
+
+                img{
+                    max-width: 100%;
+                    border-radius: 4px;
+                    height: 170px;
+                    width: 100%;
+                    @include small{
+                        height: 250px;
+                    }
+                  
+                }
+                .title{
+                    font-size: 24px;
+                    padding:10px 0;
+                    font-weight: 800;
+                    @include mobile_tablet{
+                        font-size: 20px;
+                    }
+                }
+            }
+            .text{
+                color: $light-black;
+                padding: 12px 0 25px;
+                line-height: 1.6;
+                font-size: 15px;
+                @include mobile_tablet{
+                    padding: 8px 0 16px;
+                    font-size: 14px;
+                }
+
+            }
+            .btn{
+                background-color: $black;
+                color: $main-color;
+                padding: 12 22px;
+            }
+    }
+        i{
+            padding: 10px;
+            background-color: $white;
+            border-radius: 50%;
+            color: $main-color;
+            position: absolute;
+            left: 50%;
+            bottom: 20px;
+            transform: translateX(-50%);
+            cursor: pointer;
+        }
+    }
+
+
+

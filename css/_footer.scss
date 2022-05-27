@@ -1,0 +1,106 @@
+.footer{
+    .container{
+        width: 75%;
+        @include mobile_tablet{
+            width: 85%;
+            text-align: center;
+        }
+        @include small{
+            width: 80%;
+        }
+        .content{
+            display: flex;
+            justify-content: space-between;
+            padding: 60px 0;
+            align-items: center;
+
+           @include mobile_tablet{
+               flex-direction: column-reverse;
+               text-align: center;
+           }
+            .social-icons{
+                padding-bottom: 20px;
+              
+                i{
+                    padding-right: 20px;
+                    @include mobile_tablet{
+                        padding-right: 15px;
+                    }
+                }
+            }
+            .right-text{
+                flex-basis: 35%;
+                color: #292c34;
+                line-height: 1.8;
+                padding-top: 20px;
+               
+                
+                @include mobile_tablet{
+                    font-size: 14px;
+                }
+                a{
+                    @include mobile_tablet{
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+                img{
+                    display: block;
+                    padding-bottom: 16px;
+                    width: 250px;
+                    @include mobile_tablet{
+                        width: 200px;
+                        
+                    }
+                }
+            }
+            .left-text{
+                color: #292c34;
+               
+            
+                @include mobile_tablet{
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+                h4{
+                    padding: 20px 0 10px;
+                    @include mobile_tablet{
+                        padding: 8px 0 20px;
+                    }
+                }
+            }
+        }
+    }
+    .copy-right{
+        background-color: #2a2d3c;
+        .container{
+
+            padding: 30px 0;
+            display: flex;
+            justify-content: space-between;
+            @include mobile_tablet{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                line-height: 1.8;
+                padding: 20px 0;
+            }
+        }
+       
+
+        p{
+            color: $white;
+            @include mobile_tablet{
+                font-size: 14px;
+            }
+        }
+        h5{
+            color: $white;
+            span{
+                color: $main_color;
+                font-weight: 800;
+            }
+            word-spacing: 3px;
+        }
+    }
+}
